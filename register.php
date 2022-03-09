@@ -38,7 +38,7 @@ if($loggedin){
                         <input type="password" type="text" id="password" class="form-control" placeholder="Your password" required="required" name="password">
                     </div>
                         <input type="hidden" name="action" value="register">
-                        <input class="btn btn-primary btn-block" type="submit" value="Submit">
+                        <input class="btn btn-primary btn-block" type="submit" value="Register">
                     <div class="text-right mt-10">
                         <a href="login.php">Back to login</a>
                     </div>
