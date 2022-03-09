@@ -12,6 +12,8 @@ $inv = new Inventory();
 
 ?>
 
+<!-- https://www.gethalfmoon.com/docs/dropdown/#usage-in-other-places -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,6 +137,9 @@ $inv = new Inventory();
             <div class="dropdown-menu" aria-labelledby="filter">
               <h6 class="dropdown-header">Filter by</h6>
               <a href="#" class="dropdown-item">
+                Brand <i class="fa-solid fa-moon"></i>
+              </a>
+              <a href="#" class="dropdown-item">
                 Ascending price <i class="fa fa-angle-up ml-5" aria-hidden="true"></i>
               </a>
               <a href="#" class="dropdown-item">
@@ -144,7 +149,7 @@ $inv = new Inventory();
           </div>
         </div>
 
-          <?= $inv->create_card("Nike Dunk Low Black White", "04/03/22", "DD1391-100", "100", "300", "45.5", "Footlocker", "03/09/2022", "img/dunk-low-bw.png")?>
+          <?= $inv->create_card("Nike Dunk Low Black White", "04/03/22", "DD1391-100", "100", "300", "45.5", "Footlocker", "03/09/2022", "img/dunk-low-bw.png", "Nike")?>
 
     </div>
     <!-- Content wrapper end -->

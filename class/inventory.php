@@ -20,7 +20,7 @@ class Inventory {
 
 
     public function create_card(string $name, string $release_date, string $sku, string $price, string $target, 
-                                string $size, string $store, string $purchase_date, string $image_url) {
+                                string $size, string $store, string $purchase_date, string $image_url, string $brand) {
         
         return <<<HTML
             <div class="w-300 mw-full">
@@ -48,6 +48,9 @@ class Inventory {
                 <div id="card-mtop">
                   <span class="badge">
                     <i class="fa-solid fa-ruler text-primary mr-5" aria-hidden="true"></i> $size
+                  </span>
+                  <span class="badge ml-5">
+                    <i class="fa-solid fa-fire text-secondary"></i> $brand
                   </span>
                 </div>
 
