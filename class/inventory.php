@@ -38,10 +38,10 @@ class Inventory {
                 </div>
                 <div id="card-mtop">
                   <span class="badge">
-                    <i class="fa-solid fa-dollar-sign text-success mr-5" aria-hidden="true"></i> <span>$</span>$price
+                    <i class="fa-solid fa-dollar-sign text-success mr-5" aria-hidden="true"></i> €$price
                   </span>
                   <span class="badge ml-5">
-                    <i class="fa-solid fa-dollar-sign text-danger mr-5" aria-hidden="true"></i> <span>$</span>$target
+                    <i class="fa-solid fa-dollar-sign text-danger mr-5" aria-hidden="true"></i> €$target
                   </span>
                 </div>
 

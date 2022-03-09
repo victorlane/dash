@@ -41,7 +41,7 @@ $inv = new Inventory();
           <p>Purchase amount <i class="fa-solid fa-hand-holding-dollar"></i></p>
           <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+                <span class="input-group-text">€</span>
               </div>
             <input name="purchase-amount" type="number" step="0.01" value="0.00" class="form-control">
           </div>
@@ -50,7 +50,7 @@ $inv = new Inventory();
           <p>Sell target <i class="fa-solid fa-chart-line"></i></p>
           <div class="input-group">
             <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+                <span class="input-group-text">€</span>
               </div>
             <input name="sell-target" type="number" step="0.01" value="0.00" class="form-control">
           </div>
@@ -60,6 +60,9 @@ $inv = new Inventory();
               <span class="input-group-text">SKU</span>
             </div>
             <input type="text" class="form-control" placeholder="XX-XXXXX" name="sku">
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="button">Search</button>
+            </div>
           </div>
 
         <div class="text-right mt-20">
@@ -122,6 +125,23 @@ $inv = new Inventory();
 
         <div class="col-9" style="margin-top: 1em;">
           <a href="#add-shoe"><button class="btn btn-block btn-primary" type="button"><i class="fa-solid fa-plus mr-5"></i>Add a shoe to your inventory</button></a>
+        </div>
+
+        <div class="col-3" style="margin-top: 1.1em;">
+          <div class="dropdown toggle-on-hover">
+            <button class="btn" data-toggle="dropdown" type="button" id="filter" aria-haspopup="true" aria-expanded="false">
+              All <i class="fa fa-angle-down ml-5" aria-hidden="true"></i>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="filter">
+              <h6 class="dropdown-header">Filter by</h6>
+              <a href="#" class="dropdown-item">
+                Ascending price <i class="fa fa-angle-up ml-5" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="dropdown-item">
+                Descending price <i class="fa fa-angle-down ml-5" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
           <?= $inv->create_card("Nike Dunk Low Black White", "04/03/22", "DD1391-100", "100", "300", "45.5", "Footlocker", "03/09/2022", "img/dunk-low-bw.png")?>
