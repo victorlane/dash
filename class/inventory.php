@@ -15,7 +15,7 @@ class Inventory {
     }
 
     public function get_retail_value() {
-
+      
     }
 
 
@@ -23,7 +23,7 @@ class Inventory {
                                 string $size, string $store, string $purchase_date, string $image_url, string $brand) {
         
         return <<<HTML
-            <div class="w-300 mw-full">
+            <div class="w-300">
             <div class="card p-0">
               <img src="{$image_url}" class="img-fluid rounded-top" alt="snkr-img"> 
               <div class="content">
@@ -69,6 +69,7 @@ class Inventory {
                   </span>
                 </div>
               </div>
+            </div>
         </div>
         HTML;
 
